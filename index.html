@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sito in Costruzione | BlackLinerr</title>
+    <meta name="description" content="BlackLinerr - Il nostro nuovo sito sarà presto online. Contattaci per maggiori informazioni.">
+    <meta name="keywords" content="BlackLinerr, coming soon, sito in costruzione">
+    <meta name="author" content="BlackLinerr">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sito in Costruzione | BlackLinerr">
+    <meta property="og:description" content="Il nostro nuovo sito sarà presto online. Contattaci per maggiori informazioni.">
+    <meta property="og:url" content="https://blacklinerr.it/">
+    <meta property="og:site_name" content="BlackLinerr">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sito in Costruzione | BlackLinerr">
+    <meta name="twitter:description" content="Il nostro nuovo sito sarà presto online. Contattaci per maggiori informazioni.">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BlackLinerr",
+        "url": "https://blacklinerr.it/",
+        "description": "Il nostro nuovo sito sarà presto online. Contattaci per maggiori informazioni."
+    }
+    </script>
+    
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏗️%3C/text%3E%3C/svg%3E">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --color-black: #000000;
+            --color-white: #ffffff;
+            --font-primary: 'Arial', 'Helvetica', sans-serif;
+            --font-mono: 'Courier New', monospace;
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--color-white);
+            color: var(--color-black);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .logo-section {
+            margin-bottom: 60px;
+            animation-delay: 0.2s;
+            animation-fill-mode: both;
+        }
+        
+        .logo-placeholder {
+            width: 120px;
+            height: 120px;
+            border: 3px solid var(--color-black);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: var(--transition);
+        }
+        
+        .logo-placeholder:hover {
+            transform: scale(1.05);
+        }
+        
+        .brand-name {
+            font-size: 28px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+        
+        .main-content {
+            margin-bottom: 80px;
+        }
+        
+        .main-title {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .main-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--color-black);
+            margin: 30px auto;
+        }
+        
+        .subtitle {
+            font-size: clamp(18px, 3vw, 24px);
+            font-weight: 300;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+        
+        .description {
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+            opacity: 0.8;
+        }
+        
+        .contact-section {
+            border-top: 2px solid var(--color-black);
+            padding-top: 50px;
+            margin-top: 50px;
+        }
+        
+        .contact-title {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .contact-item {
+            text-align: left;
+            padding: 25px;
+            border: 2px solid var(--color-black);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-black);
+            transition: var(--transition);
+            z-index: -1;
+        }
+        
+        .contact-item:hover::before {
+            left: 0;
+        }
+        
+        .contact-item:hover {
+            color: var(--color-white);
+            transform: translateY(-2px);
+        }
+        
+        .contact-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            opacity: 0.7;
+        }
+        
+        .contact-value {
+            font-size: 16px;
+            font-weight: 500;
+            word-break: break-word;
+        }
+        
+        .contact-value a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+        
+        .construction-icon {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            font-size: 80px;
+            opacity: 0.05;
+            pointer-events: none;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .logo-placeholder {
+                width: 80px;
+                height: 80px;
+                font-size: 18px;
+            }
+            
+            .brand-name {
+                font-size: 20px;
+                letter-spacing: 4px;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .contact-item {
+                padding: 20px;
+                text-align: center;
+            }
+            
+            .construction-icon {
+                bottom: 15px;
+                right: 15px;
+                font-size: 50px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+            
+            .logo-section {
+                margin-bottom: 40px;
+            }
+            
+            .main-content {
+                margin-bottom: 50px;
+            }
+            
+            .contact-section {
+                padding-top: 30px;
+                margin-top: 30px;
+            }
+        }
+        
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .contact-item {
+                border-width: 3px;
+            }
+            
+            .main-title::after {
+                height: 4px;
+            }
+        }
+        
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <div class="logo-placeholder" aria-label="BlackLinerr Logo Placeholder">
+                BL
+            </div>
+            <div class="brand-name">BlackLinerr</div>
+        </div>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1 class="main-title">Sito in Costruzione</h1>
+            <h2 class="subtitle">Il nostro nuovo sito sarà presto online</h2>
+            <p class="description">
+                Stiamo lavorando per offrirti un'esperienza digitale unica. 
+                Nel frattempo, non esitare a contattarci per qualsiasi informazione.
+            </p>
+        </main>
+        
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2 class="contact-title">Contattaci</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">
+                        <a href="mailto:info@blacklinerr.it">info@blacklinerr.it</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-label">Telefono</div>
+                    <div class="contact-value">
+                        <a href="tel:+39XXXXXXXXX">+39 XXX XXX XXXX</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-label">Indirizzo</div>
+                    <div class="contact-value">
+                        Via Example, 123<br>
+                        Città, Italia
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Decorative construction icon -->
+    <div class="construction-icon" aria-hidden="true">🏗️</div>
+</body>
+</html>
