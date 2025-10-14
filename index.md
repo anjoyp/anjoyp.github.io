@@ -1,14 +1,8 @@
----
-layout: default
-title: Sito in Costruzione
----
-
 # Siamo in costruzione!
 
 Il nostro sito web è attualmente in fase di sviluppo.
 
-Torneremo online presto.
-
 ## Contattaci
 
-Vuoi saperne di più? Scrivici!
+Vuoi avere maggiori informazioni?
+Scrivici via email al seguente indirizzo info@blaclinerr.it
