@@ -44,8 +44,10 @@
         }
         
         :root {
-            --color-black: #000000;
-            --color-white: #ffffff;
+            --color-background: #3a3a3a;
+            --color-text: #ffffff;
+            --color-accent: #ffffff;
+            --color-hover: #505050;
             --font-primary: 'Arial', 'Helvetica', sans-serif;
             --font-mono: 'Courier New', monospace;
             --transition: all 0.3s ease;
@@ -53,8 +55,8 @@
         
         body {
             font-family: var(--font-primary);
-            background-color: var(--color-white);
-            color: var(--color-black);
+            background-color: var(--color-background);
+            color: var(--color-text);
             line-height: 1.6;
             min-height: 100vh;
             display: flex;
@@ -91,7 +93,7 @@
         .logo-placeholder {
             width: 120px;
             height: 120px;
-            border: 3px solid var(--color-black);
+            border: 3px solid var(--color-text);
             border-radius: 50%;
             margin: 0 auto 20px;
             display: flex;
@@ -133,7 +135,7 @@
             display: block;
             width: 60px;
             height: 3px;
-            background-color: var(--color-black);
+            background-color: var(--color-text);
             margin: 30px auto;
         }
         
@@ -153,7 +155,7 @@
         }
         
         .contact-section {
-            border-top: 2px solid var(--color-black);
+            border-top: 2px solid var(--color-text);
             padding-top: 50px;
             margin-top: 50px;
         }
@@ -177,7 +179,7 @@
         .contact-item {
             text-align: left;
             padding: 25px;
-            border: 2px solid var(--color-black);
+            border: 2px solid var(--color-text);
             transition: var(--transition);
             position: relative;
             overflow: hidden;
@@ -190,7 +192,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background-color: var(--color-black);
+            background-color: var(--color-text);
             transition: var(--transition);
             z-index: -1;
         }
@@ -200,7 +202,7 @@
         }
         
         .contact-item:hover {
-            color: var(--color-white);
+            color: var(--color-background);
             transform: translateY(-2px);
         }
         
@@ -356,15 +358,15 @@
                 <div class="contact-item">
                     <div class="contact-label">Telefono</div>
                     <div class="contact-value">
-                        <a href="tel:+39XXXXXXXXX">+39 XXX XXX XXXX</a>
+                        <a href="tel:+393393503045">+393393503045</a>
                     </div>
                 </div>
                 
                 <div class="contact-item">
                     <div class="contact-label">Indirizzo</div>
                     <div class="contact-value">
-                        Via Example, 123<br>
-                        Città, Italia
+                        Piazzale Cadorna 6/10<br>
+                        Bassano del Grappa, 36061
                     </div>
                 </div>
             </div>
